@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radhu ❤️ Adi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+ margin:0;
+ font-family:'Poppins', sans-serif;
+ background: linear-gradient(135deg,#ff4d6d,#c9184a,#590d22);
+ color:white;
+ overflow:auto;
+}
+.photoText{
+  font-family: 'Great Vibes', cursive;
+  font-size: 22px;
+  color: white;
+  margin-top: 10px;
+  text-shadow: 0 0 5px black;
+}
+
+.startCard{
+ background:white;
+ color:#333;
+ padding:25px;
+ border-radius:20px;
+ box-shadow:0 10px 30px rgba(0,0,0,0.2);
+ text-align:center;
+}
+.startCard img{width:160px;border-radius:15px;}
+
+.page{
+ display:none;
+ height:100vh;
+ justify-content:center;
+ align-items:center;
+ flex-direction:column;
+ text-align:center;
+ padding:20px;
+}
+.active{display:flex}
+
+.title{
+ font-family:'Great Vibes', cursive;
+ font-size:55px;
+}
+
+.big{
+ font-size:26px;
+ text-shadow:0 0 10px pink;
+}
+
+.loveTitle{
+ font-family:'Great Vibes', cursive;
+ font-size:48px;
+ text-shadow:0 0 15px #fff, 0 0 25px #ff4d6d;
+ margin-bottom:15px;
+}
+
+.loveText{
+ font-size:18px;
+ line-height:1.8;
+ max-width:350px;
+ text-align:left;
+}
+
+
+.loveText{
+  font-family: 'Great Vibes', cursive;
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 350px;
+}
+
+.anniHeading{
+  font-family: 'Great Vibes', cursive;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff4d6d;
+  margin-bottom: 20px;
+}
+
+.anniBox{
+  border: 2px dashed white;
+  padding: 15px;
+  border-radius: 15px;
+  max-width: 320px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+}
+
+.promiseTitle{
+ font-family:'Great Vibes', cursive;
+ font-size:50px;
+ font-weight:bold;
+ text-shadow:0 0 10px #fff, 0 0 20px #ff4d6d;
+ margin-bottom:20px;
+}
+
+.cursor{
+ display:inline-block;
+ width:2px;
+ background:white;
+ margin-left:2px;
+ animation:blink 1s infinite;
+}
+@keyframes blink{50%{opacity:0;}}
+
+.countBig{
+ font-size:120px;
+ font-weight:bold;
+ animation:pulse 1s infinite;
+}
+@keyframes pulse{50%{transform:scale(1.2);}}
+
+button{
+ padding:12px 25px;
+ border:none;
+ border-radius:30px;
+ background:#ff4d6d;
+ color:white;
+ margin:10px;
+ cursor:pointer;
+}
+
+img,video{
+ width:260px;
+ max-height:50vh;
+ border-radius:20px;
+ margin:10px;
+}
+.editBox{
+ border:2px dashed white;
+ padding:10px;
+ border-radius:10px;
+}
+
+.bgHeart{
+ position:fixed;
+ bottom:-10px;
+ color:#ff8fa3;
+ animation:float 6s linear infinite;
+}
+@keyframes float{100%{transform:translateY(-100vh);}}
+
+.coupleImg{
+ width:320px;
+ animation:floatImg 3s infinite;
+}
+@keyframes floatImg{50%{transform:translateY(-10px);}}
+
+.fire{
+ position:fixed;
+ width:6px;
+ height:6px;
+ background:#ff4d6d;
+ border-radius:50%;
+ animation:boom 1s linear forwards;
+}
+@keyframes boom{
+ to{transform:translate(var(--x),var(--y)); opacity:0;}
+}
+
+#noBtn{position:relative;}
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+<source src="love.mp3">
+</audio>
+
+<!-- START -->
+<div id="start1" class="page active">
+<div class="startCard">
+<img src="hey.png">
+<h2>HEY!!</h2>
+<p>I made something for you 💖</p>
+<button onclick="goYes()">Yes 💖</button>
+<button onclick="goNo()">No 😜</button>
+</div>
+</div>
+
+<div id="startNo" class="page">
+<div class="startCard">
+<img src="angry.png">
+<h2>How Dare You 😡</h2>
+<button onclick="backStart()">Go Back</button>
+</div>
+</div>
+
+<div id="startYes" class="page">
+<div class="startCard">
+<img src="cute.png">
+<h2>That's a Good Girl 💖</h2>
+<button onclick="enterSite()">Click ❤️</button>
+</div>
+</div>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page">
+<h1 class="title">1 Year With You ❤️</h1>
+<p class="big">12 Months 💖</p>
+<p class="big">365 Days 💖</p>
+<p class="big">8760 Hours ⏳</p>
+<p class="big">525600 Minutes ⏱️</p>
+<p class="big">31536000 Seconds ❤️</p>
+<button onclick="next(2)">Continue ❤️</button>
+</div>
+
+<!-- COUNTDOWN -->
+<div id="page2" class="page">
+<h1 class="title">Apka surprised wait kr aha haii agee meriii princesss jiii😁💋</h1>
+<div id="bigCount" class="countBig">10</div>
+</div>
+
+<!-- START -->
+<div id="page3" class="page">
+<h1 class="title">Happy First Anniversary my Wife😘💋thsnkuu Babiieee meri life me ane ke liyee 😚Hamesha apn yese hi sath rhege babuuu😘 </h1>
+<button onclick="startAll()">Start Journey with me Babiieee 😁❤️</button>
+</div>
+
+<!-- FEELINGS -->
+<div id="page4" class="page">
+<div class="editBox" contenteditable="true">👉 Thnkuu soo much bacha apne mujhe accept kiya finally apke sath mujhe 1 year complete ho gaya aaj babu😁😁 idk kaise hua kaise apne mujhe sawal kiya yr 😭 mere sath to koi rh nahi sakta but apne merra gussa shn kiya  mera ego jhela sb kiya Thnkuu bachaa 😚😚 bacha aj sapna lag rha h yr ki kaise 1 year complete ho gaya apn ko😭👉🏻👈🏻 I'm so lucky ap mujhe mili yr thnku so much mera proposal accept krne ko januuu 😙🎀 bacha uk ap bhut ache ho apse acha koi bhi nahi h januu 😘 me hamsha apse peyar kruga hamsha babu hamsha 🥺👉🏻👈🏻 mere liye ap meri mammi se phele ho babu 😋💥 me apna hath kabhi nahi choruga januuu 🤝🎀 januu apki bjh se meh Happy rh😘 pata apki bjh se board me 90% aa paye thnku babu 🥰 ap ladki nahi nere liye devi jii haii 😋💥 babu apke sath har ek moment bitana khushi deta hai yr 🥹🫶🏻💝 Babu hamsha sath  rhna bacha mere kabhi chor ke nahi jana bacha 😘 ye chota sa gift apke liye babu 😁 soo muuch bacha 😘 
+Loveee youhhhh bachaaa forever and ever and ever 😘💋
+Misss uuhhhh januuuu 😉😉 ❤️</div>
+<button onclick="next(5)">Next ❤️</button>
+</div>
+
+<!-- LOVE LETTER FINAL -->
+<div id="page5" class="page">
+
+<h1 style="
+font-family:'Great Vibes',cursive;
+font-size:50px;
+color:#fff;
+text-shadow:0 0 5px #fff,0 0 10px #ff4d6d,0 0 20px #ff4d6d,0 0 40px #ff1e56;
+">
+💌 My Love Letter To You
+</h1>
+
+<div style="
+font-size:18px;
+line-height:1.8;
+max-width:360px;
+text-align:left;
+height:260px;
+overflow:auto;
+padding:15px;
+border-radius:15px;
+border:2px solid #ff4d6d;
+box-shadow:0 0 10px #ff4d6d,0 0 20px #ff4d6d,inset 0 0 10px #ff4d6d;
+background:rgba(0,0,0,0.3);
+">
+
+Dear Radhu ❤️,<br><br>
+
+Kabhi kabhi main sochta hoon ki hum kaise mile the…
+ek simple si Snapchat wali baat se start hua sab…
+aur aaj dekh… tum meri life ka sabse important part ban chuki ho 🥺
+
+27 April ka din main kabhi nahi bhool sakta…
+jab tumne mujhe accept kiya tha…
+us din meri duniya sach me change ho gayi thi ❤️
+
+Tum sirf meri girlfriend nahi ho…
+tum meri habit ho, meri aadat ho… meri peace ho 💖
+tumhare bina sab kuch adhura lagta hai…
+
+Main maanta hoon…
+main kabhi kabhi gussa ho jata hoon 😔
+kabhi zyada possessive ho jata hoon…
+par uske peeche sirf ek reason hota hai —
+tumhe khone ka darr…
+
+Main tumse perfect hone ka promise nahi karta…
+par ye zaroor promise karta hoon ki
+main hamesha tumhare saath rahunga ❤️
+
+Tumhari hasi meri strength hai…
+tumhari awaaz meri sukoon hai…
+aur tumhara saath meri life ka sabse bada gift hai 🎁
+
+Ye 1 saal… sirf time nahi tha…
+ye meri life ka sabse beautiful phase tha 💫
+aur main chahta hoon ki aise hi hum saath rahein… hamesha…
+
+Radhu… will you stay with me forever? 💍
+
+Tumhara…
+Adi ❤️`;<br>
+Main hamesha tumhare saath rahunga ❤️<br><br>
+
+Tumhara…<br>
+Adi ❤️
+<br><br>
+
+
+</div>
+
+<button onclick="show('page6')">Next ❤️</button>
+
+</div>
+
+<div id="page6" class="page">
+
+<h1 class="anniHeading">Happy Anniversary Babyy ❤️</h1>
+
+<div class="anniBox" contenteditable="true">
+Yayyy finally ✨❤️
+We have completed one year together baby✨ and one year feels like few days💗 because with u time flies so fast 💕
+This year has changed many things between us....we are more closer now and it was so fun to spend this year with you because everything feels so peaceful when I'm with you 💕
+Spending time with you is the best therapy for me. I can never describe in words about the place u have in my heart it's so difficult to use some to describe ur importance in my life 💕 but genuinely I feel so lucky to having you as my man 💋 I feel so proud on my choice and my baby ✨
+This one year is nothing I wanna spend rest of my life with you 💗 I wanna see every ups and down with you 💗 I wanna grow old with you baby ❤️ no one ever can take the place of u in my life because you're my one and only 💋
+Thankyou for being with me everyday thankyou for dealing with my every mood swings 💕 trust me no one could ever love me the way u do ❤️I promise I'll try to be a better person for you I'll give you everything you deserve ❤️And tell the world tha you only mine
+WISHING YOU A HAPPIEST FIRST ANNIVERSARY PATNII JII ✨💕✨</div>
+
+<button onclick="next(7)">Next ❤️</button>
+
+</div>
+
+<!-- MEDIA -->
+<div id="page7" class="page"><video controls src="video1.mp4"><p class="photoText">Yad hai apko ye apne mere liye first snap banai thi ese hi dhekh kr bhut din tk khush hota raha phir esi peyare face se peyar hota chala gaya thnk you so much bacha aj es snp se milne tk ka safar nibhaya apne babyyyy😘💕</p></video><button onclick="next(8)">Next ❤️</button></div>
+<div id="page8" class="page"><video controls src="video2.mp4"></video><p class="photoText">Ye maine apka jhuutha panii piya tha idk logo ko kyu bura lgta h ye sb mujhe to bhut acha lgta hai apka jhuutha pani pina hehehehhe babbyyyy🤭🤭</p><button onclick="next(9)">Next ❤️</button></div>
+
+<!-- PHOTOS -->
+<div id="page9" class="page"><img src="photo1.jpg"><p class="photoText">Ye apn first time mile the idk kaise mile apn or maine apko gale laga paya thnkuuu yr babyyy apki bjh se mil bhi paya idk maine apni life me etna peyar kisi se nahi kiya 😍😍mujhe nahi lgta apn kabhi mil payege but god ne milva diya ye mujhe ek sapne jaisa lgta hai yrr 😭😭Thnku apne apne past ko bhula kr mujhe accept kiya babuuu😘💋</p><button onclick="next(10)">Next ❤️</button></div>
+<div id="page10" class="page"><img src="photo2.jpg"><p class="photoText">Ye apne mere liye saree phni thi really babu aj bhi us din ko yad krta hu to bhut acha lgta hai kyuki koi ladki mujh jaisie ladke ke liye etna nahi kr sakti😭😭us din bhut acha lga tha saree me dhekhna apko mera fav h yrr babyyy😘😘Thanku mujhe speacial feel karvane ko januuu</p><button onclick="next(11)">Next ❤️</button></div>
+<div id="page11" class="page"><img src="photo3.jpg">Ye apn bhut long time ke baad mil paye the hope nahi thi miil bhi payege but mil hi liye the god ki bjh se babyy😭😭yad hai maine apko surprised kiya tha apse bol diya tha meh nahi aa rha or me ghr me sbse lad kr apse milne aya tha 😁😁 Apse milne aya th ap mano yesa feel hua tha jaise meri wife khadi ho samne 😁 Phir apne mujhe etna tight pkd liya tha ki phucho mst etna acha laga tha expain nhi kr sakti januu 😭bs hamesha ye din yad rhege ye meri life ke sbse imp part hai babiiieee😘<p class="photoText"> </p><button onclick="next(12)">Next ❤️</button></div>
+<div id="page12" class="page"><img src="photo4.jpg">Ye apne mere liye second time saree phni thi darloo😍😍esme ap swarg se utri hui apsara lg rahi thi januuu😘😘Apki bo kamar hwattiieee💋 apke bo pink pink lips aaaahahhahah🤤 apki bo badi badi akhe haaueee me to pgl ho jati hu un akho ko dhekh kr babbiiiieeee😁😁Thankkk you etna sb krne ko mere liye babyyyy im so lucky januu ap mujhe mili jo yrr 😭😭<p class="photoText"></p><button onclick="next(13)">Next ❤️</button></div>
+<div id="page13" class="page"><img src="photo5.jpg"><p class="photoText">Ye yad hai meh jate time apse milne aya tha kitna acha din tha bo kitna suhana mausam babyyy or apn mil paye the badi muskil ke bad 😁😁milte hi maine apke per chuhe the ap kitni happpy hui thi phir maine apko kiss di thi gaal pe kaisa laga tha januu batana ajrur??? 😁😁Phir apne mere hath me hath dala tha apne kaha tha ladki dalti h babyyy hath😂😂 phir maine jate time apke per chuhe the to ap bhut ahppy hui thi apki smile ne mersa din bana diya tha us smile ko kabhi nahi bhulla oata babyyyy😘💋</p><button onclick="next(14)">Next ❤️</button></div>
+<div id="page14" class="page"><img src="photo6.jpg"><p class="photoText">Ye jab trip se bapas aya tha to only apke liye tkg aya tha bs apse milna tha but us din to ye lag raha tha mil nahi payege but apne sb mange kiya tha baby milne ke liye thnkuuuu sooo muchhh darlingggg😘😘😘Mere liye dant sunbi sb kiye yr maaawwwwaaaahhhhhhh babiiiieee💋💋💋💋us din apko suit me dhekh kr dil bahar aya tha etni sundar lg rhi thi mujhe ap suit and sareee or kurti me dhekhna bhut psnd h babyyy😍😍us din me bs apki akho me dehkhe ja rha tha ufff un akho me apka bo peyar kitni bholii or peyariii ldkii hoo yr sb pagal ho jayege apke peyar me to yr babuuu😭😭</p><button onclick="next(15)">Next ❤️</button></div>
+<div id="page15" class="page"><img src="photo7.jpg"><p class="photoText">Ye meh apke liye payal laya tha taki apko koi nazar na laga paye etni sundar hiii hai meri wifeee🤭 Meri wife ke bo hootiiieee per huhhhhh🤤🤤dilkrta tha kiss kr pau to kiss bhi kr liye the😁😁bs ab lick krne h pero koo uffff sexyyy ldayyyy🫣🫣</p><button onclick="next(16)">Next ❤️</button></div>
+<div id="page16" class="page"><img src="photo8.jpg"><p class="photoText">ye meh apke liye churi laya tha idk apko psnd ayegi ya nahi but apko churi psnd thi to laya tha baby apko gift dena bhut acha lgta hai januuu😁😁</p><button onclick="next(17)">Next ❤️</button></div>
+<div id="page17" class="page"><img src="photo9.jpg"><p class="photoText">Ye yad hai apko lgta tha dar ki meh accept nahi kruga apka past tha januuu but peyar tha khuch bhi ho bs apko es duniya se safe rkhna tha bhut bure log hai baby or ap jhel nahi pati bs apko usse move on karvana chahta tha bo apke liye sahi nahi tha baby finally usse move on krva liya apko or bacha liya babuuuu and thnkuuu babu apne mera proposal accept kiya babu lgta nahi tha ap krogi bhi ya nahi kyuki ap phele se peyar krti thi but apne kr hi liya finally thnkuuuu babyyy 😘💋Loveee youuhhh patnii jiii😘😘</p><button onclick="next(18)">Next ❤️</button></div>
+
+<!-- PROPOSAL -->
+<div id="page18" class="page">
+<h1>Will You Stay With Me Forever? 💍</h1>
+<button onclick="finalYes()">YES ❤️</button>
+<button id="noBtn">NO 😜</button>
+</div>
+
+<!-- PROMISE PAGE -->
+<div id="page19" class="page">
+<h1 class="promiseTitle">I Promise You My Wife 😘</h1>
+
+<div class="editBox" contenteditable="true">
+promise to love you with loyalty and devotion for a lifetime. I will always be here to listen, to support you, and to make you feel loved and valued. I will stand with you in every struggle, cheer for you in every success, and believe in your dreams like my own. I will be your safe place, your comfort, your friend, and your strength when life feels heavy. You can trust that I'm not going anywhere. I promise you, always.. ❤️</div>
+
+<button onclick="next(20)">Next ❤️</button>
+</div>
+
+<!-- FINAL -->
+<div id="page20" class="page">
+<h1 class="title">I Love You Forever Radhu ❤️</h1>
+<img src="couple.png" class="coupleImg"
+onerror="this.style.display='none'">
+</div>
+
+<script>
+
+/* FIXED NAVIGATION */
+function show(id){
+ document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+ let el=document.getElementById(id);
+ if(el) el.classList.add("active");
+}
+
+function goYes(){show("startYes")}
+function goNo(){show("startNo")}
+function backStart(){show("start1")}
+function enterSite(){show("page1")}
+
+function next(n){
+ show("page"+n);
+}
+
+/* START MUSIC */
+function startAll(){
+ document.getElementById("bgMusic").play().catch(()=>{});
+ next(4);
+}
+
+/* FIXED TIMER (10 SEC) */
+let sec=10;
+let c=setInterval(()=>{
+ let el=document.getElementById("bigCount");
+ if(el){
+  el.innerHTML=sec;
+  sec--;
+  if(sec<0){
+   clearInterval(c);
+   next(3);
+  }
+ }
+},1000);
+
+/* HEARTS */
+setInterval(()=>{
+ let h=document.createElement("div");
+ h.className="bgHeart";
+ h.innerHTML="❤️";
+ h.style.left=Math.random()*100+"vw";
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),6000);
+},300);
+
+/* NO BUTTON MOVE */
+let noBtn=document.getElementById("noBtn");
+function moveNo(){
+ noBtn.style.position="absolute";
+ noBtn.style.top=Math.random()*80+"%";
+ noBtn.style.left=Math.random()*80+"%";
+}
+noBtn.addEventListener("mouseover",moveNo);
+noBtn.addEventListener("touchstart",moveNo);
+
+/* FIREWORK */
+function fire(){
+ for(let i=0;i<20;i++){
+  let f=document.createElement("div");
+  f.className="fire";
+  f.style.left=Math.random()*100+"vw";
+  f.style.top=Math.random()*100+"vh";
+  f.style.setProperty('--x',(Math.random()*200-100)+'px');
+  f.style.setProperty('--y',(Math.random()*200-100)+'px');
+  document.body.appendChild(f);
+  setTimeout(()=>f.remove(),1000);
+ }
+}
+
+function finalYes(){
+ next(19);
+ setInterval(fire,800);
+}
+
+/* LETTER */
+let text=`Dear Radhu ❤️ You are my everything...`;
+let i=0;
+function type(){
+ if(i<text.length){
+  document.getElementById("letter").innerHTML+=text[i]==="\n"?"<br>":text[i];
+  i++;
+  setTimeout(type,35);
+ }
+}
+type();
+
+</script>
+
+</body>
+</html>
